@@ -1,0 +1,22 @@
+body{
+    background-color: #232323;
+}
+
+h1{
+    color: #ffffff;
+}
+
+.container{
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.square{
+    width: 30%;
+    padding-bottom: 30%;
+    background-color: #00ff00;
+    float: left;
+    margin: 1.66%;
+    border-radius: 15%;
+}
+
