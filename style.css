@@ -13,6 +13,10 @@ h1{
     color: #000;
 }
 
+.selected{
+    background-color: greenyellow;
+}
+
 .container{
     max-width: 550px;
     margin: 0 auto;
