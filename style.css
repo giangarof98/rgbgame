@@ -1,20 +1,49 @@
 body{
     background-color: #232323;
+    margin: 0;
+    padding: 0;
 }
 
 h1{
     color: #ffffff;
+    text-align: center;
+    background-color: #5171b1;
+    margin: 0;
+    padding: 0.5%;
+    line-height: 1.1;
+}
+
+#msg{
+    display: inline-block;
+    width: 20%;
+}
+
+button{
+    background-color: #fff;
+    color: #5171b1;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover{
+    color: #fff;
+    background-color: #5171b1;
 }
 
 #stripe{
     background: #fff;
-    height: 30px;
+    height: 35px;
     text-align: center;
     color: #000;
 }
 
 .selected{
-    background-color: greenyellow;
+    background-color: #5171b1;
+    color: #fff;
 }
 
 .container{
