@@ -8,7 +8,8 @@ let colors = [
     'rgb(0, 0, 255)',
     'rgb(0, 255, 255)',
 ];
-let pickedColor = colors[3]
+let pickedColor = pickColor();
+let msg = document.getElementById('msg');
 colorDisplay.textContent = pickedColor
 
 for(let i = 0; i < squares.length; i++){
@@ -16,9 +17,22 @@ for(let i = 0; i < squares.length; i++){
     squares[i].addEventListener('click', function() {
         var clickedColor = this.style.backgroundColor;
         if(clickedColor === pickedColor){
-            alert('correct');
+            msg.textContent = 'Correct'
+            changeColor(clickedColor)
         } else{
-            alert('try again!')
+            msg.textContent = 'try again'
+            this.style.backgroundColor = '#232323'
         }
     })
+}
+
+function changeColor(color){
+    for(let i = 0; i < squares.length; i++){
+        squares[i].style.backgroundColor = color
+    }
+}
+
+function pickColor(){
+    let random = Math.floor(Math.random() * colors.length)
+    return colors[random];
 }
